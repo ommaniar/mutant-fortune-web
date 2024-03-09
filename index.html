@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutant Fortune</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="res/icon.png" type="image/x-icon">
+</head>
+
+<body class="background-primary-color background-primary-image " data-bs-spy="scroll">
+    <!-- background auido -->
+    <audio id='background-music' autoplay>
+        <source src="res/main_theme.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        var audio = document.getElementById("background-music");
+        audio.volume = 0.4;
+    </script>
+    <!-- navigation bar -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark bg-opacity-50">
+            <div class="container-fluid ">
+                <div class="navbar-brand"><img src="res/icon.png" height="50px" alt="logos"></div>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#link1">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="link1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active disabled">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="weapons.html" class="nav-link">Weapons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about_us.html" class="nav-link">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Welcome section -->
+    <section class="text-light text-center my-5 p- ">
+        <p class="fw-lighter fs-1">Welcome To Mutant Fortune!</p>
+        <p class="fw-light fs-2"> Conquer Monsters and Unleash Your Adventure!</p>
+        <a href="https://errorengine-games.itch.io/mutant-fortune" target="_blank" class="btn bg-success">Play For
+            Free</a>
+    </section>
+
+
+    <!-- The Carousel -->
+
+    <section class="container mt-1">
+        <div id="carousel1" class="carousel slide carousel-fade" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button class="active bg-success" data-bs-target="#carousel1" data-bs-slide-to="0"></button>
+                <button class="bg-success" data-bs-target="#carousel1" data-bs-slide-to="1"></button>
+                <button class="bg-success" data-bs-target="#carousel1" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="res/art_upscaled5.png" alt="" class="img-fluid d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Mutant Fortune</h5>
+                        <p>The front screen art</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="res/screenshot-1.png" alt="" class="img-fluid d-block w-100">
+                    <div class="carousel-caption">
+                        <p>Complete Quests</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="res/screenshot-2.png" alt="" class="img-fluid d-block w-100">
+                    <div class="carousel-caption">
+                        <p>Defeat Monsters</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section>
+
+    <!-- introduction section -->
+    <section class="container text-light bg-opacity-25  bg-secondary text-center my-5 p-5 font-rubik">
+        <p>Mutant fortune is 2d top-down approach. Benefit of it Is that the game will be light because there will be
+            less graphics to render and will work most likely on all machines. This game will be a player vs environment
+            (PVE) game in which player have to defeat enemies to gain points and finish quests in the game.
+        </p>
+        <p>This game will provide player a world to explore, bunch of quest to finish, different enemies to fight with,
+            different weapons to fight with enemies, currency to purchase stuff, items to use, etc.
+        </p>
+
+    </section>
+
+    <!-- Info Table -->
+    <section class="container text-light bg-opacity-50 pt-5 font-rubik">
+        <h3 class="text-center">Information</h3>
+        <table class="table table-dark">
+            <tbody>
+                <tr>
+                    <td>Status</td>
+                    <td>Releasd</td>
+                </tr>
+                <tr>
+                    <td>Platforms</td>
+                    <td>Windows</td>
+                </tr>
+                <tr>
+                    <td>Authors</td>
+                    <td>ErrorEngine Games</td>
+                </tr>
+                <tr>
+                    <td>Genre</td>
+                    <td>Action, Shooter</td>
+                </tr>
+                <tr>
+                    <td>Made With</td>
+                    <td>Unity, Aseprite</td>
+                </tr>
+                <tr>
+                    <td>Tags</td>
+                    <td>2D, Singleplayer, Top-Down, Top Down Adventure, Top down shooter</td>
+                </tr>
+                <tr>
+                    <td>Language</td>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td>Inputs</td>
+                    <td>Keyboard, Mouse</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!-- weapons -->
+    <section class="container text-light bg-opacity-50 text-center pt-5 px-5 font-rubik">
+        <div class="row">
+            <div class="col-8"><img src="res/weapons.png" class="img-fluid" alt=""></div>
+            <div class="col-4 p-5">
+                <h1>know your weapons</h1>
+                <p>Use its unique ability and destroy the monsters</p>
+                <a class="btn btn-success" href="weapons.html">More About Weapons</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="container">
+        <iframe frameborder="0"
+            src="https://itch.io/embed/2074526?bg_color=000000&amp;fg_color=ffffff&amp;link_color=3ffff7&amp;border_color=333535"
+            width="100%" height="167"><a href="https://errorengine-games.itch.io/mutant-fortune">Mutant Fortune by
+                ErrorEngine Games, NuclearShadow</a></iframe>
+    </section> -->
+    <footer class="bg-dark text-white justify-content-center mt-3 py-3 bg-opacity-50">
+        <p class="text-center">&copy; ErrorEngine Games | All rights reserved.</p>
+    </footer>
+
+</body>
+
+
+</html>

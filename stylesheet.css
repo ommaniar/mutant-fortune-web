@@ -1,0 +1,62 @@
+*{
+    font-family: 'Nova Square',sans-serif;
+
+}
+.background-primary-image{
+    background-image: url(res/jungle_background.png) !important;
+    /* background-size: cover; */
+    background-color: #080b1d;
+}
+.background-primary-color{
+}
+.font-rubik{
+    /* font-family: 'Rubik', sans-serif; */
+    font-family: 'Nova Square',sans-serif;
+}
+.container-shadow{
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important
+}
+.bg-darkblue{
+    background-color: #080b1d;
+}
+.carousel-caption {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item:hover .carousel-caption {
+  display: block;
+  opacity: 1;
+}
+
+.background-about-us{
+    /* height: 300px; */
+    position: relative;
+}
+.about-us-text{
+    position: absolute;
+    bottom: 20%;
+    left:40px;
+    width: 50vw;
+}
+.modal-dark {
+    background-color: rgba(0, 0, 0) !important; /* Adjust the opacity or color as needed */
+}
+
+@media (max-width: 767.98px) {
+    /* .about-us-text{
+        position: static;
+        text-align: center;
+        width: 100%;
+        padding: 50px;
+    } */
+    /* .about-us-image{
+        display: none;
+    } */
+    .background-about-us{
+        font-size: xx-small;
+    }
+    .about-us-text{
+        bottom:0;
+    }
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutant Fortune - Weapons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="res/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="background-primary-color background-primary-image " data-bs-spy="scroll">
+    <audio id='background-music' autoplay>
+        <source src="res/calm_theme.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        var audio = document.getElementById("background-music");
+        audio.volume = 0.5;
+    </script>
+    <!-- navigation bar -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark bg-opacity-50">
+            <div class="container-fluid ">
+                <div class="navbar-brand"><img src="res/icon.png" height="50px" alt="logos"></div>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#link1">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="link1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link ">Home</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle" dropdown-bs-toggle="dropdown">Weapons</button>
+                            <div class="dropdown-menu dropdown-menu-dark">
+                                <a href="#pistol" class="dropdown-item">pistol</a>
+                            </div>
+                        </li> -->
+                        <li class="nav-item dropdown"><a href="" class="nav-link dropdown-toggle"
+                                data-bs-toggle="dropdown">Weapons</a>
+                            <div class="dropdown-menu dropdown-menu-dark">
+                                <a href="#pistol" class="dropdown-item">Pistol</a>
+                                <a href="#poison" class="dropdown-item">Poison</a>
+                                <a href="#blaster" class="dropdown-item">Blaster</a>
+                                <a href="#bhopu" class="dropdown-item">Bhopu</a>
+                                <a href="#canine" class="dropdown-item">Canine</a>
+                                <a href="#alien" class="dropdown-item">Alien</a>
+                                <a href="#gold" class="dropdown-item">Gold</a>
+
+                            </div>
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="about_us.html" class="nav-link">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container py-2 tab-content" id="#weapon-content">
+        <section class="my-4">
+            <!-- Weapon overall information -->
+            <div class="row">
+                <div class="col-md-12 text-light">
+                    <h1 class="text-center p-3">Weapons</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4" id="Weapon">
+                    <div class="text-light">
+                        <p>Weapon are used to defeat an enemy. Each weapon consist of unique <span
+                                class="fw-bold">special ability</span> which
+                            can be used to destroy monsters. Weapons can be bought using gems.</p>
+                        <p>Each time weapon is shoot or special ability is used, it consumes energy which can be
+                            regilled using a battery.</p>
+                        <p>Feel free to use and explore any weapon which you may find fitting to your playstyle. Equip
+                            your favourite weapon and be the number one.</p>
+                    </div>
+                </div>
+                <div class="col-md-8 ">
+                    <img src="res/weapon-wheen-II.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- Pistol -->
+        <section id="pistol" class="m-5">
+            <div class="row m-5">
+                <div class="col-12 text-light">
+                    <h1 class="text-center">Pistol</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 text-center mb-3"><img src="res/pistol.png" alt="" class="img-fluid"></div>
+                <div class="col-md-10 text-white">
+                    <p>Pistol is the basic weapon given to you from the beginning. It might look weak to you but it is
+                        decent enough to clear enemies as per is cost pric.e</p>
+                    <p><span class="fw-bold">Special Ability:</span> Significantly increases Fire Rate.</p>
+                    <button class="btn btn-success text-white" data-bs-toggle="collapse"
+                        data-bs-target="#pistol-preview">Show Preview</button>
+                </div>
+                <div class="collapse" id="pistol-preview">
+                    <div class="row">
+                        <div class="col-md-12 my-2">
+                            <img src="res/pistol-preview.png" alt="pistol-preview" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Poison -->
+        <section id="poison" class="m-5">
+            <div class="row m-5">
+                <div class="col-12 py-4 text-light">
+                    <h1 class="text-center">Poison</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 text-white">
+                    <p>Poison is quite it sounds like it throws poison and damages enemy. It cost 2500 ingame currecny and is the cheapest weapon to buy. </p>
+                    <p><span class="fw-bold">Special Ability:</span> Throws a molly which gives damage over time to anyone who is on it.</p>
+                    <button class="btn btn-success text-white" data-bs-toggle="collapse"
+                        data-bs-target="#poison-preview">Show Preview</button>
+                </div>
+                <div class="col-md-2 text-center mb-3"><img src="res/poison.png" alt="" class="img-fluid"></div>
+                <div class="collapse" id="poison-preview">
+                    <div class="row">
+                        <div class="col-md-12 my-2">
+                            <img src="res/poison-preview.png" alt="pistol-preview" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Blaster -->
+        <section id="blaster" class="m-5">
+            <div class="row m-5">
+                <div class="col-12 py-4 text-light">
+                    <h1 class="text-center">Blaster</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 text-center mb-3"><img src="res/blaster.png" alt="" class="img-fluid"></div>
+                <div class="col-md-10 text-white">
+                    <p>Blaster is a good weapon with better firerate than pistol and it shoots laser out of it. Costs 3000 currency.</p>
+                    <p><span class="fw-bold">Special Ability:</span> Doesn't consume energy for some time. </p>
+                    <button class="btn btn-success text-white" data-bs-toggle="collapse"
+                        data-bs-target="#blaster-preview">Show Preview</button>
+                </div>
+                <div class="collapse" id="blaster-preview">
+                    <div class="row">
+                        <div class="col-md-12 my-2">
+                            <img src="res/blaster-preview.png" alt="blaster-preview" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Bhopu -->
+        <section id="bhopu" class="m-5">
+            <div class="row m-5">
+                <div class="col-12 py-4 text-light">
+                    <h1 class="text-center">Bhopu</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 text-white">
+                    <p>Bhopu is a trumpet which actually damages via noise. Costs 3500 in armory.</p>
+                    <p><span class="fw-bold">Special Ability:</span> Creates bigger soundwaves for some time.</p>
+                    <button class="btn btn-success text-white" data-bs-toggle="collapse"
+                        data-bs-target="#bhopu-preview">Show Preview</button>
+                </div>
+                <div class="col-md-2 text-center mb-3"><img src="res/bhopu.png" alt="" class="img-fluid"></div>
+                <div class="collapse" id="bhopu-preview">
+                    <div class="row">
+                        <div class="col-md-12 my-2">
+                            <img src="res/bhopu-preview.png" alt="bhopu-preview" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Canine -->
+        <section id="canine" class="m-5">
+            <div class="row m-5">
+                <div class="col-12 py-4 text-light">
+                    <h1 class="text-center">Canine</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 text-center mb-3"><img src="res/canine.png" alt="" class="img-fluid"></div>
+                <div class="col-md-10 text-white">
+                    <p>Canine shoots a shuriken and deals damage to enemy.It costs 3000 in armory to buy. </p>
+                    <p><span class="fw-bold">Special Ability:</span> Instead of one shuriken it throws multiple shuriken. </p>
+                    <button class="btn btn-success text-white" data-bs-toggle="collapse"
+                        data-bs-target="#canine-preview">Show Preview</button>
+                </div>
+                <div class="collapse" id="canine-preview">
+                    <div class="row">
+                        <div class="col-md-12 my-2">
+                            <img src="res/canine-preview.png" alt="blaster-preview" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Alien -->
+        <section id="alien" class="m-5">
+            <div class="row m-5">
+                <div class="col-12 py-4 text-light">
+                    <h1 class="text-center">Alien</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 text-white">
+                    <p>Alien is mysterious gun which shoots a mysterious object and deals damage. Costs 5000 in armory.</p>
+                    <p><span class="fw-bold">Special Ability:</span> Becomes dark and automatically finds enemy and shoot it.</p>
+                    <button class="btn btn-success text-white" data-bs-toggle="collapse"
+                        data-bs-target="#alien-preview">Show Preview</button>
+                </div>
+                <div class="col-md-2 text-center mb-3"><img src="res/alien.png" alt="" class="img-fluid"></div>
+                <div class="collapse" id="alien-preview">
+                    <div class="row">
+                        <div class="col-md-12 my-2">
+                            <img src="res/alien-preview.png" alt="alien-preview" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Gold -->
+        <section id="gold" class="m-5">
+            <div class="row m-5">
+                <div class="col-12 py-4 text-light">
+                    <h1 class="text-center">Gold</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 text-center mb-3"><img src="res/gold.png" alt="" class="img-fluid"></div>
+                <div class="col-md-10 text-white">
+                    <p>Gold is powerful sniper and also the costliest. It costs 6000 in armory.</p>
+                    <p><span class="fw-bold">Special Ability:</span> Deals a massive aoe damage. </p>
+                    <button class="btn btn-success text-white" data-bs-toggle="collapse"
+                        data-bs-target="#gold-preview">Show Preview</button>
+                </div>
+                <div class="collapse" id="gold-preview">
+                    <div class="row">
+                        <div class="col-md-12 my-2">
+                            <video class="img-fluid" src="res/gold-preview.mp4" controls></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-white justify-content-center mt-3 py-3 bg-opacity-50">
+        <p class="text-center">&copy; ErrorEngine Games | All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

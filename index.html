@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="res/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body class="background-primary-color background-primary-image " data-bs-spy="scroll">
@@ -24,10 +25,7 @@
     <audio id='background-music' autoplay>
         <source src="res/main_theme.mp3" type="audio/mp3">
     </audio>
-    <script>
-        var audio = document.getElementById("background-music");
-        audio.volume = 0.4;
-    </script>
+    
     <!-- navigation bar -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-md bg-dark navbar-dark bg-opacity-50">
@@ -55,22 +53,26 @@
 
 
     <!-- Welcome section -->
-    <section class="text-light text-center my-5 p- ">
+    <section class="container text-center text-light my-5 p- ">
         <p class="fw-lighter fs-1">Welcome To Mutant Fortune!</p>
         <p class="fw-light fs-2"> Conquer Monsters and Unleash Your Adventure!</p>
-        <a href="https://errorengine-games.itch.io/mutant-fortune" target="_blank" class="btn bg-success">Play For
-            Free</a>
+        <a href="https://errorengine-games.itch.io/mutant-fortune" target="_blank" class="btn bg-success btn-download">Available in itch.io <i class="fa-brands fa-itch-io fs-3"></i></a>
     </section>
 
 
     <!-- The Carousel -->
 
-    <section class="container mt-1">
-        <div id="carousel1" class="carousel slide carousel-fade" data-bs-ride="true">
+    <section class="container-fluid mt-1">
+        <div id="carousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-indicators">
                 <button class="active bg-success" data-bs-target="#carousel1" data-bs-slide-to="0"></button>
                 <button class="bg-success" data-bs-target="#carousel1" data-bs-slide-to="1"></button>
                 <button class="bg-success" data-bs-target="#carousel1" data-bs-slide-to="2"></button>
+                <button class="bg-success" data-bs-target="#carousel1" data-bs-slide-to="3"></button>
+                <button class="bg-success" data-bs-target="#carousel1" data-bs-slide-to="4"></button>
+                <button class="bg-success" data-bs-target="#carousel1" data-bs-slide-to="5"></button>
+
+
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -92,6 +94,24 @@
                         <p>Defeat Monsters</p>
                     </div>
                 </div>
+                <div class="carousel-item">
+                    <img src="res/Leaderboards.png" alt="" class="img-fluid d-block w-100">
+                    <div class="carousel-caption">
+                        <p>Get in top of leaderboards</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="res/weapon-wheel.png" alt="" class="img-fluid d-block w-100">
+                    <div class="carousel-caption">
+                        <p>Select Different Weapons</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="res/armory.png" alt="" class="img-fluid d-block w-100">
+                    <div class="carousel-caption">
+                        <p>Buy Weapons From armory</p>
+                    </div>
+                </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -106,7 +126,7 @@
     </section>
 
     <!-- introduction section -->
-    <section class="container text-light bg-opacity-25  bg-secondary text-center my-5 p-5 font-rubik">
+    <section class="container rounded-4 text-light bg-opacity-50  bg-dark text-center my-5 p-5 font-rubik">
         <p>Mutant fortune is 2d top-down approach. Benefit of it Is that the game will be light because there will be
             less graphics to render and will work most likely on all machines. This game will be a player vs environment
             (PVE) game in which player have to defeat enemies to gain points and finish quests in the game.
@@ -118,7 +138,7 @@
     </section>
 
     <!-- Info Table -->
-    <section class="container text-light bg-opacity-50 pt-5 font-rubik">
+    <section class="container text-light pt-5 font-rubik">
         <h3 class="text-center">Information</h3>
         <table class="table table-dark">
             <tbody>
@@ -128,7 +148,11 @@
                 </tr>
                 <tr>
                     <td>Platforms</td>
-                    <td>Windows</td>
+                    <td>Windows <i class="bi bi-microsoft"></i></td>
+                </tr>
+                <tr>
+                    <td>Available At</td>
+                    <td>Itch.io <i class="fa-brands fa-itch-io fs-4"></i></td>
                 </tr>
                 <tr>
                     <td>Authors</td>
@@ -140,7 +164,7 @@
                 </tr>
                 <tr>
                     <td>Made With</td>
-                    <td>Unity, Aseprite</td>
+                    <td>Unity <i class="bi bi-unity"></i>, Aseprite</td>
                 </tr>
                 <tr>
                     <td>Tags</td>
@@ -168,18 +192,17 @@
             </div>
         </div>
     </section>
-
-
-    <!-- <section class="container">
-        <iframe frameborder="0"
-            src="https://itch.io/embed/2074526?bg_color=000000&amp;fg_color=ffffff&amp;link_color=3ffff7&amp;border_color=333535"
-            width="100%" height="167"><a href="https://errorengine-games.itch.io/mutant-fortune">Mutant Fortune by
-                ErrorEngine Games, NuclearShadow</a></iframe>
-    </section> -->
+    
+    <!-- back to top button -->
+    <a class="btn btn-success rounded-5 back-to-top" href="#"><i class="bi bi-arrow-up"></i></a>
+    
     <footer class="bg-dark text-white justify-content-center mt-3 py-3 bg-opacity-50">
         <p class="text-center">&copy; ErrorEngine Games | All rights reserved.</p>
     </footer>
-
+    <script>
+        var audio = document.getElementById("background-music");
+        audio.volume = 0.4;
+    </script>
 </body>
 
 

@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- 
+Title: Webstie for game (Mutant Fortune website)
+Description: It is made for showcasing the game
+Prepared By: Maniar Om Vimalbhai, 23002171220008
+ -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,13 +54,13 @@
                         <li class="nav-item dropdown"><a href="" class="nav-link dropdown-toggle"
                                 data-bs-toggle="dropdown">Weapons</a>
                             <div class="dropdown-menu dropdown-menu-dark">
+                                <a href="#gold" class="dropdown-item">Gold</a>
                                 <a href="#pistol" class="dropdown-item">Pistol</a>
                                 <a href="#poison" class="dropdown-item">Poison</a>
                                 <a href="#blaster" class="dropdown-item">Blaster</a>
                                 <a href="#bhopu" class="dropdown-item">Bhopu</a>
                                 <a href="#canine" class="dropdown-item">Canine</a>
                                 <a href="#alien" class="dropdown-item">Alien</a>
-                                <a href="#gold" class="dropdown-item">Gold</a>
 
                             </div>
 
@@ -95,6 +99,32 @@
             </div>
         </section>
         <hr>
+         <!-- Gold -->
+         <section id="gold" class="mt-5">
+            <div class="row">
+                <div class="col-12 py-4 text-light">
+                    <h1 class="text-center">Gold</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 text-white text-center">
+                    <p>Gold is powerful sniper and also the costliest. It costs 6000 in armory.</p>
+                    <p><span class="fw-bold">Special Ability:</span> Deals a massive aoe damage. </p>
+                    <button class="btn btn-success text-white my-2" data-bs-toggle="collapse"
+                        data-bs-target="#gold-preview">Show Preview</button>
+                </div>
+                <div class="col-md-2 text-center mb-3"><img src="res/gold.png" alt="" class="img-fluid"></div>
+
+                <div class="collapse" id="gold-preview">
+                    <div class="row">
+                        <div class="col-md-12 my-2">
+                            <video class="img-fluid" src="res/gold-preview.mp4" autoplay loop></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
         <!-- Pistol -->
         <section id="pistol" class="mt-4">
             <div class="row">
@@ -114,7 +144,7 @@
                 <div class="collapse" id="pistol-preview">
                     <div class="row">
                         <div class="col-md-12 my-2">
-                            <img src="res/pistol-preview.png" alt="pistol-preview" class="img-fluid">
+                            <video class="img-fluid" src="res/pistol-preview.mp4" autoplay loop></video>
                         </div>
                     </div>
                 </div>
@@ -140,7 +170,7 @@
                 <div class="collapse" id="poison-preview">
                     <div class="row">
                         <div class="col-md-12 my-2">
-                            <img src="res/poison-preview.png" alt="pistol-preview" class="img-fluid">
+                            <video class="img-fluid" src="res/poison-preview.mp4" autoplay loop></video>
                         </div>
                     </div>
                 </div>
@@ -166,7 +196,7 @@
                 <div class="collapse" id="blaster-preview">
                     <div class="row">
                         <div class="col-md-12 my-2">
-                            <img src="res/blaster-preview.png" alt="blaster-preview" class="img-fluid">
+                            <video class="img-fluid" src="res/blaster-preview.mp4" autoplay loop></video>
                         </div>
                     </div>
                 </div>
@@ -192,7 +222,7 @@
                 <div class="collapse" id="bhopu-preview">
                     <div class="row">
                         <div class="col-md-12 my-2">
-                            <img src="res/bhopu-preview.png" alt="bhopu-preview" class="img-fluid">
+                            <video class="img-fluid" src="res/bhopu-preview.mp4" autoplay loop></video>
                         </div>
                     </div>
                 </div>
@@ -218,7 +248,7 @@
                 <div class="collapse" id="canine-preview">
                     <div class="row">
                         <div class="col-md-12 my-2">
-                            <img src="res/canine-preview.png" alt="blaster-preview" class="img-fluid">
+                            <video class="img-fluid" src="res/canine-preview.mp4" autoplay loop></video>
                         </div>
                     </div>
                 </div>
@@ -244,7 +274,7 @@
                 <div class="collapse" id="alien-preview">
                     <div class="row">
                         <div class="col-md-12 my-2">
-                            <img src="res/alien-preview.png" alt="alien-preview" class="img-fluid">
+                            <video class="img-fluid" src="res/alien-preview.mp4" autoplay loop></video>
                         </div>
                     </div>
                 </div>
@@ -252,31 +282,11 @@
         </section>
         <hr>
 
-        <!-- Gold -->
-        <section id="gold" class="mt-5">
-            <div class="row">
-                <div class="col-12 py-4 text-light">
-                    <h1 class="text-center">Gold</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 text-center mb-3"><img src="res/gold.png" alt="" class="img-fluid"></div>
-                <div class="col-md-10 text-white text-center">
-                    <p>Gold is powerful sniper and also the costliest. It costs 6000 in armory.</p>
-                    <p><span class="fw-bold">Special Ability:</span> Deals a massive aoe damage. </p>
-                    <button class="btn btn-success text-white my-2" data-bs-toggle="collapse"
-                        data-bs-target="#gold-preview">Show Preview</button>
-                </div>
-                <div class="collapse" id="gold-preview">
-                    <div class="row">
-                        <div class="col-md-12 my-2">
-                            <video class="img-fluid" src="res/gold-preview.mp4" controls></video>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+       
     </div>
+    <!-- back to top button -->
+
+    <a class="btn btn-success rounded-5 back-to-top" href="#"><i class="bi bi-arrow-up"></i></a>
 
     <footer class="bg-dark text-white justify-content-center mt-3 py-3 bg-opacity-50">
         <p class="text-center">&copy; ErrorEngine Games | All rights reserved.</p>

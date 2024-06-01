@@ -5,17 +5,11 @@
 .background-primary-image{
     background-image: url(res/jungle_background.png) !important;
     background-repeat: no-repeat;
-    /* background-size: cover; */
     background-color: #080b1d;
     background-attachment: fixed;
 
 }
-.background-primary-color{
-}
-.font-rubik{
-    /* font-family: 'Rubik', sans-serif; */
-    font-family: 'Nova Square',sans-serif;
-}
+
 .container-shadow{
     box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important
 }
@@ -28,18 +22,7 @@
 .carousel img{
     height:80vh;
 }
-/* .card{
-    display: flex;
-    flex-direction: column;
-}
-.card-body{
-    flex:1;
-}
-.card-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}  */
+
 .back-to-top{
     position: fixed;
     bottom: 20px;
@@ -66,29 +49,16 @@
 .btn-download:hover{
     box-shadow: inset 300px 0 0 0 #014529;
 }
-/* @keyframes btn-shake {
-    0%{
-        transform:rotate(0deg)
-    }
-    25%{
-        transform: rotate(10deg);
-    }
-    50%{
-        transform: rotate(-10deg);
-    }100%{
-        transform: rotate(0deg);
-    }
-} */
+.card{
+    transition: .3s transform ease;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+
+
 @media (max-width: 767.98px) {
-    /* .about-us-text{
-        position: static;
-        text-align: center;
-        width: 100%;
-        padding: 50px;
-    } */
-    /* .about-us-image{
-        display: none;
-    } */
+
     .background-about-us{
         font-size: xx-small;
     }

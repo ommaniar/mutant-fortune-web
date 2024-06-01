@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- 
-Title: Webstie for game (Mutant Fortune website)
-Description: It is made for showcasing the game
-Prepared By: Maniar Om Vimalbhai, 23002171220008
- -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,13 +21,10 @@ Prepared By: Maniar Om Vimalbhai, 23002171220008
 </head>
 
 <body class="background-primary-color background-primary-image " data-bs-spy="scroll">
-    <audio id='background-music' autoplay>
+    <audio id='background-music' autoplay loop>
         <source src="res/calm_theme.mp3" type="audio/mp3">
     </audio>
-    <script>
-        var audio = document.getElementById("background-music");
-        audio.volume = 0.5;
-    </script>
+  
     <!-- navigation bar -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-md bg-dark navbar-dark bg-opacity-50">
@@ -45,12 +38,6 @@ Prepared By: Maniar Om Vimalbhai, 23002171220008
                         <li class="nav-item">
                             <a href="index.html" class="nav-link ">Home</a>
                         </li>
-                        <!-- <li class="nav-item dropdown">
-                            <button class="nav-link dropdown-toggle" dropdown-bs-toggle="dropdown">Weapons</button>
-                            <div class="dropdown-menu dropdown-menu-dark">
-                                <a href="#pistol" class="dropdown-item">pistol</a>
-                            </div>
-                        </li> -->
                         <li class="nav-item dropdown"><a href="" class="nav-link dropdown-toggle"
                                 data-bs-toggle="dropdown">Weapons</a>
                             <div class="dropdown-menu dropdown-menu-dark">
@@ -111,7 +98,7 @@ Prepared By: Maniar Om Vimalbhai, 23002171220008
                     <p>Gold is powerful sniper and also the costliest. It costs 6000 in armory.</p>
                     <p><span class="fw-bold">Special Ability:</span> Deals a massive aoe damage. </p>
                     <button class="btn btn-success text-white my-2" data-bs-toggle="collapse"
-                        data-bs-target="#gold-preview">Show Preview</button>
+                        data-bs-target="#gold-preview" onclick="changeText(this)">Show Preview</button>
                 </div>
                 <div class="col-md-2 text-center mb-3"><img src="res/gold.png" alt="" class="img-fluid"></div>
 
@@ -139,7 +126,7 @@ Prepared By: Maniar Om Vimalbhai, 23002171220008
                         decent enough to clear enemies as per is cost pric.e</p>
                     <p><span class="fw-bold">Special Ability:</span> Significantly increases Fire Rate.</p>
                     <button class="btn btn-success text-white py-2" data-bs-toggle="collapse"
-                        data-bs-target="#pistol-preview">Show Preview</button>
+                        data-bs-target="#pistol-preview" onclick="changeText(this)">Show Preview</button>
                 </div>
                 <div class="collapse" id="pistol-preview">
                     <div class="row">
@@ -164,7 +151,7 @@ Prepared By: Maniar Om Vimalbhai, 23002171220008
                     <p>Poison is quite it sounds like it throws poison and damages enemy. It cost 2500 ingame currecny and is the cheapest weapon to buy. </p>
                     <p><span class="fw-bold">Special Ability:</span> Throws a molly which gives damage over time to anyone who is on it.</p>
                     <button class="btn btn-success text-white py-2" data-bs-toggle="collapse"
-                        data-bs-target="#poison-preview">Show Preview</button>
+                        data-bs-target="#poison-preview" onclick="changeText(this)">Show Preview</button>
                 </div>
                 <div class="col-md-2 text-center mb-3 py-2"><img src="res/poison.png" alt="" class="img-fluid"></div>
                 <div class="collapse" id="poison-preview">
@@ -191,7 +178,7 @@ Prepared By: Maniar Om Vimalbhai, 23002171220008
                     <p>Blaster is a good weapon with better firerate than pistol and it shoots laser out of it. Costs 3000 currency.</p>
                     <p><span class="fw-bold">Special Ability:</span> Doesn't consume energy for some time also increase damage output. </p>
                     <button class="btn btn-success text-white py-2" data-bs-toggle="collapse"
-                        data-bs-target="#blaster-preview">Show Preview</button>
+                        data-bs-target="#blaster-preview" onclick="changeText(this)">Show Preview</button>
                 </div>
                 <div class="collapse" id="blaster-preview">
                     <div class="row">
@@ -216,7 +203,7 @@ Prepared By: Maniar Om Vimalbhai, 23002171220008
                     <p>Bhopu is a trumpet which actually damages via noise. Costs 3500 in armory.</p>
                     <p><span class="fw-bold">Special Ability:</span> Creates bigger soundwaves for some time.</p>
                     <button class="btn btn-success text-white py-2" data-bs-toggle="collapse"
-                        data-bs-target="#bhopu-preview">Show Preview</button>
+                        data-bs-target="#bhopu-preview" onclick="changeText(this)">Show Preview</button>
                 </div>
                 <div class="col-md-2 text-center py-2"><img src="res/bhopu.png" alt="" class="img-fluid"></div>
                 <div class="collapse" id="bhopu-preview">
@@ -243,7 +230,7 @@ Prepared By: Maniar Om Vimalbhai, 23002171220008
                     <p>Canine shoots a shuriken and deals damage to enemy.It costs 3000 in armory to buy. </p>
                     <p><span class="fw-bold">Special Ability:</span> Instead of one shuriken it throws multiple shuriken. </p>
                     <button class="btn btn-success text-white my-2" data-bs-toggle="collapse"
-                        data-bs-target="#canine-preview">Show Preview</button>
+                        data-bs-target="#canine-preview" onclick="changeText(this)">Show Preview</button>
                 </div>
                 <div class="collapse" id="canine-preview">
                     <div class="row">
@@ -268,7 +255,7 @@ Prepared By: Maniar Om Vimalbhai, 23002171220008
                     <p>Alien is mysterious gun which shoots a mysterious object and deals damage. Costs 5000 in armory.</p>
                     <p><span class="fw-bold">Special Ability:</span> Becomes dark and automatically finds enemy and shoot it.</p>
                     <button class="btn btn-success text-white my-2" data-bs-toggle="collapse"
-                        data-bs-target="#alien-preview">Show Preview</button>
+                        data-bs-target="#alien-preview" onclick="changeText(this)">Show Preview</button>
                 </div>
                 <div class="col-md-2 text-center my-2"><img src="res/alien.png" alt="" class="img-fluid"></div>
                 <div class="collapse" id="alien-preview">
@@ -291,7 +278,19 @@ Prepared By: Maniar Om Vimalbhai, 23002171220008
     <footer class="bg-dark text-white justify-content-center mt-3 py-3 bg-opacity-50">
         <p class="text-center">&copy; ErrorEngine Games | All rights reserved. <br> All Images used are owned by their respective owners. This Website is made for project purpose only</p>
     </footer>
+    <script>
+        var audio = document.getElementById("background-music");
+        audio.volume = 0.7;
 
+        function changeText(id){
+            buttonText = id.textContent.trim();
+            if(buttonText == "Show Preview"){
+                id.textContent = "Hide Preview";
+            }else{
+                id.textContent = "Show Preview";
+            }
+        }
+    </script>
 </body>
 
 </html>

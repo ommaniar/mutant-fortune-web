@@ -93,7 +93,7 @@
             <div class="col-lg-4  col-md-6 my-2 px-4">
                 <div class="card bg-dark text-light h-100 bg-opacity-75">
                     <div class="card-body">
-                        <img src="res/orio-pfp.jpg" alt="" class="card-img-top img-fluid p-3 h-50">
+                        <img src="res/profile.png" alt="" class="card-img-top img-fluid p-3 h-50">
                         <h5 class="card-title m-2">Orio</h5>
                         <h6 class="card-subtitle m-2">Developer</h6>
                         <p class="card-text m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
@@ -120,7 +120,7 @@
             <div class="col-lg-4  col-md-6 my-2 px-4">
                 <div class="card bg-dark text-light h-100 bg-opacity-75">
                     <div class="card-body">
-                        <img src="res/Ezio-pfp.png" alt="" class="card-img-top img-fluid p-3 h-50">
+                        <img src="res/profile.png" alt="" class="card-img-top img-fluid p-3 h-50">
                         <h5 class="card-title m-2">Ezio</h5>
                         <h6 class="card-subtitle m-2">Artist, Map, Website Designer</h6>
                         <p class="card-text m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
@@ -146,7 +146,7 @@
             <div class="col-lg-4  col-md-6 my-2 px-4">
                 <div class="card bg-dark text-light h-100 bg-opacity-75">
                     <div class="card-body">
-                        <img src="res/Queit-Kid-pfp.jpg" alt="" class="card-img-top img-fluid p-3 h-50">
+                        <img src="res/profile.png" alt="" class="card-img-top img-fluid p-3 h-50">
                         <h5 class="card-title m-2">Queit Kid</h5>
                         <h6 class="card-subtitle m-2">Artist</h6>
                         <p class="card-text m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
@@ -172,7 +172,7 @@
             <div class="col-lg-4  col-md-6 my-2 px-4 bg-opacity-75">
                 <div class="card bg-dark text-light h-100 bg-opacity-75">
                     <div class="card-body">
-                        <img src="res/wizard-pfp.jpg" alt="" class="card-img-top img-fluid p-3 h-50">
+                        <img src="res/profile.png" alt="" class="card-img-top img-fluid p-3 h-50">
                         <h5 class="card-title m-2">Wizzy</h5>
                         <h6 class="card-subtitle m-2">Artist, Musician</h6>
                         <p class="card-text m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
@@ -209,13 +209,23 @@
                         <button class="btn btn-close btn-danger" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
-                        <form>
-                            <label for="name" class="form-label">Name:</label>
-                            <input type="text" name="name" id="name" class="form-control" placeholder="Enter Name">
-                            <label for="email" class="form-label">Email:</label>
-                            <input type="email" name="email" id="email" class="form-control" placeholder="Enter Email">
+                        <form class="was-validated">
+                            <div>
+                                <label for="name" class="form-label">Name:</label>
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Enter Name" required>
+                                <p class="invalid-feedback">Please Enter Your Name</p>
+                            </div>
+                           <div>
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Enter Email" required>
+                                <p class="invalid-feedback">Please Enter your Email</p>                            
+                           </div>
+                           <div>
                             <label for="comment">Add Comment:</label>
-                            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                            <textarea name="comment" id="comment" cols="30" rows="10" required></textarea>
+                            <p class="invalid-feedback">Enter Your Comment</p>
+                           </div>
+                            
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-success" type="submit">Submit</button>

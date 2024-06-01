@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- 
+Title: Webstie for game (Mutant Fortune website)
+Date: 1st April, 2024
+Description: It is made for showcasing the game
+Prepared By: Maniar Om Vimalbhai, 23002171220008
+ -->
 <head>
     <meta charset="UTF-8">
+    <!-- title -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mutant Fortune</title>
+    <!-- bs 5.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <!-- bs icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- local stylesheet -->
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
@@ -20,9 +29,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<body class="background-primary-color background-primary-image " data-bs-spy="scroll">
+<body class="background-primary-color background-primary-image ">
     <!-- background auido -->
-    <audio id='background-music' autoplay>
+    <audio id='background-music' autoplay loop>
         <source src="res/main_theme.mp3" type="audio/mp3">
     </audio>
     
@@ -53,7 +62,7 @@
 
 
     <!-- Welcome section -->
-    <section class="container text-center text-light my-5 p- ">
+    <section class="container text-center text-light my-5">
         <p class="fw-lighter fs-1">Welcome To Mutant Fortune!</p>
         <p class="fw-light fs-2"> Conquer Monsters and Unleash Your Adventure!</p>
         <a href="https://errorengine-games.itch.io/mutant-fortune" target="_blank" class="btn bg-success btn-download">Available in itch.io <i class="fa-brands fa-itch-io fs-3"></i></a>
@@ -63,14 +72,14 @@
     <!-- The Carousel -->
 
     <section class="container-fluid mt-1">
-        <div id="carousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div id="carousel-main" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-indicators">
-                <button class="active bg-success" data-bs-target="#carousel1" data-bs-slide-to="0"></button>
-                <button class="bg-success" data-bs-target="#carousel1" data-bs-slide-to="1"></button>
-                <button class="bg-success" data-bs-target="#carousel1" data-bs-slide-to="2"></button>
-                <button class="bg-success" data-bs-target="#carousel1" data-bs-slide-to="3"></button>
-                <button class="bg-success" data-bs-target="#carousel1" data-bs-slide-to="4"></button>
-                <button class="bg-success" data-bs-target="#carousel1" data-bs-slide-to="5"></button>
+                <button class="active bg-success" data-bs-target="#carousel-main" data-bs-slide-to="0"></button>
+                <button class="bg-success" data-bs-target="#carousel-main" data-bs-slide-to="1"></button>
+                <button class="bg-success" data-bs-target="#carousel-main" data-bs-slide-to="2"></button>
+                <button class="bg-success" data-bs-target="#carousel-main" data-bs-slide-to="3"></button>
+                <button class="bg-success" data-bs-target="#carousel-main" data-bs-slide-to="4"></button>
+                <button class="bg-success" data-bs-target="#carousel-main" data-bs-slide-to="5"></button>
 
 
             </div>
@@ -113,11 +122,11 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-main" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-main" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -126,7 +135,7 @@
     </section>
 
     <!-- introduction section -->
-    <section class="container rounded-4 text-light bg-opacity-50  bg-dark text-center my-5 p-5 font-rubik">
+    <section class="container rounded-4 text-light bg-opacity-50  bg-dark text-center my-5 p-5">
         <p>Mutant fortune is 2d top-down approach. Benefit of it Is that the game will be light because there will be
             less graphics to render and will work most likely on all machines. This game will be a player vs environment
             (PVE) game in which player have to defeat enemies to gain points and finish quests in the game.
@@ -138,7 +147,7 @@
     </section>
 
     <!-- Info Table -->
-    <section class="container text-light pt-5 font-rubik">
+    <section class="container text-light pt-5">
         <h3 class="text-center">Information</h3>
         <table class="table table-dark">
             <tbody>
@@ -182,7 +191,7 @@
         </table>
     </section>
     <!-- weapons -->
-    <section class="container text-light bg-opacity-50 text-center pt-5 px-5 font-rubik">
+    <section class="container text-light bg-opacity-50 text-center pt-5 px-5">
         <div class="row">
             <div class="col-md-8"><img src="res/weapons.png" class="img-fluid" alt=""></div>
             <div class="col-md-4 p-5">
@@ -200,7 +209,7 @@
         <p class="text-center">&copy; ErrorEngine Games | All rights reserved. <br> All Images used are owned by their respective owners. This Website is made for project purpose only</p>    </footer>
     <script>
         var audio = document.getElementById("background-music");
-        audio.volume = 0.4;
+        audio.volume = 0.7;
     </script>
 </body>
 
